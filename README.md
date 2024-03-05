@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# Sync Code: Realtime Collaborative Code Editor
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
+Are you tired of sending code snippets back and forth, struggling to debug and collaborate with your team? Look no further! **Sync Code** is here to revolutionize the way you code together. This powerful and intuitive collaborative code editor is designed to empower developers, and teams to work seamlessly in real-time, regardless of their location. With **Sync Code**, you can code together, debug together, and ship faster, together.
 
-## Available Scripts
+## Features
+- Multiple users can join a room and edit code together
+- Changes are reflected in real time
+- Copy button to copy the room id to clipboard
+- Leave button to leave the room
+- Supports syntax highlighting (currently only for JavaScript)
+- Users can leave the room and rejoin later to continue editing
+- Joining & leaving of users is also reflected in real time
 
-In the project directory, you can run:
+### Prerequisites
+- Node.js (v20.11.0)
+- yarn (v1.22.21)
 
-### `npm start`
+I have used nvm (v0.39.7) to manage my node versions. View nvm official [documentation](https://github.com/nvm-sh/nvm) to install it.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech Stack
+- React.js
+- Node.js
+- Express.js
+- Socket.io
+- CodeMirror
+- React-Toastify
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Run Locally
+This project is not currently live on any server. But to use the demo version, follow the steps below:
+- Clone this repository and cd into it
+- Run `yarn` to install the dependencies
+- To start the react app client run `yarn start` in one terminal
+- To start the server run `yarn server:dev` in another terminal
+- Go to `http://localhost:3000` to view the app
+- Create a room by clicking on the `create new room` button and put a username of your choice
+- Copy the room id by clicking on the `Copy ROOM ID` button
+- To join as an another user open another browser/browser-window or an incognito tab and go to `http://localhost:3000`
+- Enter the same room id to join the same room
 
-### `npm test`
+Now both your editor will be synced and you can see the changes in real time. Try opening the same room in multiple browsers/browsers-windows and see the changes.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Video
+https://github.com/Mohitur669/Realtime-Collaborative-Code-Editor/assets/79283402/14c17cc7-d23a-4d39-8af3-ef9e9fa8ef45
 
-### `npm run build`
+**Note:** If you find any bugs, create an Issue [here](https://github.com/Mohitur669/Realtime-Collaborative-Code-Editor/issues). I will try to fix it as soon as possible :) <br>
+In case you want to fix it yourself, feel free to make a pull request.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Future Scope
+- Add support to accept or reject new users trying to join the room
+- Add to implement video and voice chat feature inside the editor
+- Add syntax highlighting for multiple languages
+- Add support for multiple themes (currently using Dracula theme)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Open Source Contribution
+If you want to make contribution to this projects, follow the steps below:
+1. Fork this repository
+2. Clone the forked repository <br>
+```
+git clone https://github.com/your-github_username/Realtime-Collaborative-Code-Editor.git
+```
+3. cd into the cloned repository
+4. Create a new branch <br>
+```
+git checkout -b your_branch_name
+```
+5.  Make your changes
+6. Commit and push your changes <br>
+```
+git add . <br>
+git commit -m "your commit message" <br>
+git push origin your_branch_name
+```
+7. Finally, create a pull request by visiting your forked repository on GitHub
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Note:** Please make sure to use your own branch when contributing.
 
-### `npm run eject`
+## About Me
+I am Mohd Mohitur Rahaman, a tech geek, currently pursuing a Master's in Computer Applications (Final Year) from KIIT, Bhubaneswar. And with a deep passion for coding and a strong love for science & technology, I am dedicated to honing my skills and achieving proficiency as a developer.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Connect with me
+- [LinkedIn](https://www.linkedin.com/in/mohitur02/)
+- [GitHub](https://www.github.com/Mohitur669/)
